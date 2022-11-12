@@ -36,9 +36,13 @@ main{
     order: 3;
     display: grid;
 }
-.buttons{
+.top_buttons{
     display: flex;
     justify-content: space-between;
+}
+.bottom_buttons{
+    display: flex;
+    justify-content: right;
 }
 footer{
     order: 4;
