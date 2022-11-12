@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 1px;
+    background-color: #f9f3ec;
 
 }
 h1,footer{
