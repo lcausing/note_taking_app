@@ -39,10 +39,12 @@ main{
 .top_buttons{
     display: flex;
     justify-content: space-between;
+    padding: 1em 1em ;
 }
 .bottom_buttons{
     display: flex;
     justify-content: right;
+    padding: 1em 1em;
 }
 footer{
     order: 4;
