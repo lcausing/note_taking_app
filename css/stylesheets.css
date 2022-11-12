@@ -31,11 +31,15 @@ aside{
 aside li{
     list-style-type: square;
 }
+
 main{
     order: 3;
     display: grid;
 }
-
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
 footer{
     order: 4;
     text-align: center;
