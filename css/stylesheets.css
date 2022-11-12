@@ -1,2 +1,7 @@
-font-family: 'Roboto Mono', monospace;
-font-family: 'Open Sans', sans-serif;
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+main
+#text_area{
+    font-family: 'Roboto Mono', monospace;
+}
