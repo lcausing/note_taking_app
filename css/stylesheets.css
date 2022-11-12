@@ -33,7 +33,9 @@ aside li{
 }
 main{
     order: 3;
+    display: grid;
 }
+
 footer{
     order: 4;
     text-align: center;
