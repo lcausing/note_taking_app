@@ -16,6 +16,13 @@ body {
 h1,footer{
     text-align: center;
 }
+#new_note{
+    background-color: #4b7171;
+    color: #f9f3ec;
+    border: 0;
+    padding: 0.75rem;
+    border-radius: 1em;
+}
 header ul{
     list-style-type: none;
     display: flex;
@@ -82,5 +89,8 @@ main{
         order:3;
         grid-row: 3/4;
         grid-column: 2/3;
+    }
+    #new_note{
+        padding: 1rem;
     }
 }
