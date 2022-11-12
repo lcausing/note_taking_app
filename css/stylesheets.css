@@ -12,9 +12,9 @@ body {
 h1{
     text-align: center;
 }
-header{
+/* header{
     order: 1;
-}
+} */
 header ul{
     list-style-type: none;
     display: flex;
@@ -25,15 +25,15 @@ header ul{
 header ul li{
     padding: 5px;
 }
-aside{
+/* aside{
     order: 2;
-}
+} */
 aside li{
     list-style-type: square;
 }
 
 main{
-    order: 3;
+    /* order: 3; */
     display: grid;
 }
 .top_buttons{
@@ -51,6 +51,18 @@ main{
 }
 
 footer{
-    order: 4;
+    /* order: 4; */
     text-align: center;
+}
+@media screen and (min-width:600px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-auto-rows: max-content;
+    }
+    aside{
+        order:1 ;
+        grid-column: 1/2;
+        grid-row: 1/-1;
+    }
 }
