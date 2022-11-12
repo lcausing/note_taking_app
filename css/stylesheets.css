@@ -7,10 +7,12 @@
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    display: flex;
+    flex-direction: column;
 }
-
+h1,h2{
+    text-align: center;
+}
 header{
     order: 1;
 }
