@@ -10,11 +10,20 @@ body {
     display: flex;
     flex-direction: column;
 }
-h1,h2{
+h1{
     text-align: center;
 }
 header{
     order: 1;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+header ul li{
+    padding: 5px;
 }
 aside{
     order: 2;
