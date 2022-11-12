@@ -5,11 +5,21 @@
 #text_area{
     font-family: 'Roboto Mono', monospace;
 }
-aside{
-    display: flex;
-    flex-direction: column;
-}
+
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
+}
+
+header{
+    order: 1;
+}
+aside{
+    order: 2;
+}
+main{
+    order: 3;
+}
+footer{
+    order: 4;
 }
