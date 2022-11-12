@@ -12,9 +12,6 @@ body {
 h1{
     text-align: center;
 }
-/* header{
-    order: 1;
-} */
 header ul{
     list-style-type: none;
     display: flex;
@@ -25,15 +22,11 @@ header ul{
 header ul li{
     padding: 5px;
 }
-/* aside{
-    order: 2;
-} */
 aside li{
     list-style-type: square;
 }
 
 main{
-    /* order: 3; */
     display: grid;
 }
 .top_buttons{
@@ -51,38 +44,40 @@ main{
 }
 
 footer{
-    /* order: 4; */
     text-align: center;
 }
 @media screen and (min-width:600px) {
-    /* body{
- 
-    } */
+    body{
+        display: grid;
+        grid-template-rows: 1fr repeat(auto,1fr);
+        grid-template-columns: 1fr 4fr; 
+    }
     aside{
         order:0;
-        flex-direction: row;
-        flex: 0;
+        grid-column: 1/2;
+        height: 100%;
+        z-index: 1;
+        height: 100%;
         width: 20%;
-        background-color: blue;
-        align-items:flex-end;
+        position: fixed;
+        z-index: 0;
+        top: 0;
+        left: 0;
     }
     header{
         order:1;
-        flex-direction: column;
-        width: 80%;
-        flex: 1;
+        grid-row: 1/2;
+        grid-column: 2/3;
         
     }
     main{
         order:2;
-        flex-direction: column;
-        width: 80%;
-        flex: 1;
+        grid-row: 2/3;
+        grid-column: 2/3;
     }
     footer{
         order:3;
-        flex-direction: column;
-        width: 80%;
-        flex: 1;
+        grid-row: 3/4;
+        grid-column: 2/3;
     }
 }
