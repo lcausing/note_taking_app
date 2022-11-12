@@ -28,6 +28,9 @@ header ul li{
 aside{
     order: 2;
 }
+aside li{
+    list-style-type: square;
+}
 main{
     order: 3;
 }
