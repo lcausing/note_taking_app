@@ -1,7 +1,15 @@
 *{
     font-family: 'Open Sans', sans-serif;
 }
-main
+
 #text_area{
     font-family: 'Roboto Mono', monospace;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
