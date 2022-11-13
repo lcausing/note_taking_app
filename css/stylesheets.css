@@ -8,12 +8,13 @@ body {
     margin: 0;
     background-color: #f9f3ec;
     min-height: 100vh;
+
 /*---------Header---------*/
 }
 h1,footer{
     text-align: center;
 }
-header ul{
+header nav ul{
     list-style-type: none;
     display: flex;
     justify-content: right;
@@ -28,17 +29,22 @@ header ul li{
 }
 
 /*---------Aside---------*/
-aside li{
-    list-style-type: square;
-}
 aside{
     color: #4b7171;
     background-color: #FFF3A3;
-    width: 100%;
+    width: 100vw;
 }
-aside h2{
-    margin-left: 0.5rem ;
+aside ul{
+    list-style-type: square;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+/* aside h2{
+    margin-left: 0.5rem;
+} */
+
+
 
 /*---------Main---------*/
 main{
@@ -140,7 +146,6 @@ footer{
         order:3;        
         grid-row: 3;
         grid-column: 2/-1;
-        text-align: center;
     }
     #new_note{
         padding: 1rem;
