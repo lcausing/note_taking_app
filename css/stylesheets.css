@@ -2,20 +2,52 @@
     font-family: 'Open Sans', sans-serif;
     color:#395656 ;
 }
-#text_area{
-    font-family: 'Roboto Mono', monospace;
-    margin: 0rem 0.5rem 0rem;
-}
-
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
     background-color: #f9f3ec;
-
+    min-height: 100vh;
+/*---------Header---------*/
 }
 h1,footer{
     text-align: center;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    margin: 0rem 0.5rem 0rem 0rem;
+    padding: 0rem;
+}
+header ul li{
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    margin: 0rem 0.5rem 0rem 0rem;
+}
+
+/*---------Aside---------*/
+aside li{
+    list-style-type: square;
+}
+aside{
+    color: #4b7171;
+    background-color: #FFF3A3;
+    width: 100%;
+}
+aside h2{
+    margin-left: 0.5rem ;
+}
+
+/*---------Main---------*/
+main{
+    display: grid;
+}
+.top_buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em 1em;
 }
 button{
     color: #f9f3ec;
@@ -29,41 +61,11 @@ button{
 #dark_theme{
     background-color: #514F64;
 }
-#cancel{
-    background-color: #92302A;
-    margin: 0rem 0.5rem 0rem 0rem;
-}
-header ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: right;
-    margin: 0rem 0.5rem 0rem 0rem;
-    padding: 0rem;
 
-}
-header ul li{
-    padding: 5px;
-    margin: 0rem 0.5rem 0rem 0rem;
-}
-aside li{
-    list-style-type: square;
-}
-aside{
-    color: #4b7171;
-    background-color: #FFF3A3;
-    padding-left: 1rem 
-    width 100%;
-}
-aside h2{
-    margin-left: .04rem ;
-}
-main{
-    display: grid;
-}
-.top_buttons{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 1rem 1rem;
+#text_area{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0rem 0.5rem 0rem;
+    height:10vh;
 }
 .bottom_buttons{
     display: flex;
@@ -74,17 +76,34 @@ main{
 #save{
     margin-right: 1%;
 }
+#cancel{
+    background-color: #92302A;
+    margin: 0rem 0.5rem 0rem 0rem;
+}
+/*---------Footer---------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer_logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 @media screen and (min-width:600px) {
     body{
         display: grid;
-        grid-template-rows: 1fr repeat(auto,1fr);
+        grid-template-rows: max-content auto max-content;
         grid-template-columns: 1fr 4fr; 
+        height: 100vh;
     }
     aside{
         order:0;
         grid-column: 1/2;
         height: 100%;
+        
         z-index: 1;
         width: 20%;
         position: fixed;
@@ -94,6 +113,7 @@ main{
     aside h2{
         text-align: center;
         margin-bottom: 0em;
+        margin-left: .04rem;
     }
     header{
         order:1;
@@ -101,17 +121,25 @@ main{
         grid-column: 2/3;
         
     }
+    .bottom_buttons{
+        display: flex;
+        justify-content: right;
+        padding: 0em 0em 0em 0em;
+        margin: 0rem 0.5rem 0rem 0rem;
+    }
+    button{
+        padding: 0.5rem;
+        border-radius: 1em;
+    }
     main{
         order:2;
         grid-row: 2/3;
         grid-column: 2/3;
     }
     footer{
-        order:3;
-        grid-row: 3/4;
-        grid-column: 2/3;
-        /* position:sticky;
-        bottom: 0; */
+        order:3;        
+        grid-row: 3;
+        grid-column: 2/-1;
         text-align: center;
     }
     #new_note{
