@@ -60,7 +60,7 @@ main{
     margin: 1em;
 }
 button{
-    color: #f9f3ec;
+    color: white;
     border: 0;
     padding: 1em 1em 1em;
     border-radius: 1em;
@@ -69,7 +69,7 @@ button{
     background-color: #395656;
 }
 #dark_theme{
-    background-color: #6f6a87;
+    background-color: #514f64;
 }
 
 #text_area{
