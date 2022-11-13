@@ -110,6 +110,9 @@ main{
         order:3;
         grid-row: 3/4;
         grid-column: 2/3;
+        /* position:sticky;
+        bottom: 0; */
+        text-align: center;
     }
     #new_note{
         padding: 1rem;
