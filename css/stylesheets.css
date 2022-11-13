@@ -6,7 +6,7 @@ body {
     display: grid;
     grid-template-rows: max-content max-content max-content;
     margin: 0;
-    background-color: #f9f3ec;
+    background-color: #f2e9dd;
     height: 100vh;
     font-size: 75%;
     
@@ -34,7 +34,7 @@ header ul li{
 /*---------Aside---------*/
 aside{
     color: #4b7171;
-    background-color: #FFF3A3;
+    background-color: #f9f3ec;
     width: 100vw;
 }
 aside ul{
