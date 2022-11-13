@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     margin: 0;
     background-color: #f9f3ec;
-    min-height: 100vh;
+    height: 100vh;
 
 /*---------Header---------*/
 }
@@ -53,7 +53,8 @@ main{
 .top_buttons{
     display: flex;
     justify-content: space-between;
-    padding: 1em 1em 1em;
+    margin: 1rem;
+    /* padding: 1em 1em 1em; */
 }
 button{
     color: #f9f3ec;
@@ -96,6 +97,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: auto;
 }
 
 @media screen and (min-width:600px) {
