@@ -40,9 +40,9 @@ aside ul{
     flex-direction: row;
     justify-content: space-around;
 }
-/* aside h2{
+aside h2{
     margin-left: 0.5rem;
-} */
+}
 
 
 
@@ -53,13 +53,13 @@ main{
 .top_buttons{
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 1em;
     /* padding: 1em 1em 1em; */
 }
 button{
     color: #f9f3ec;
     border: 0;
-    padding: 0.75rem;
+    padding: 0.5em;
     border-radius: 1em;
 }
 #new_note, #save{
@@ -72,7 +72,7 @@ button{
 #text_area{
     font-family: 'Roboto Mono', monospace;
     margin: 0rem 0.5rem 0rem;
-    height:10vh;
+    height:15rem;
 }
 .bottom_buttons{
     display: flex;
