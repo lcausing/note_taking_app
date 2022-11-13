@@ -59,7 +59,6 @@ main{
     display: flex;
     justify-content: space-between;
     margin: 1em;
-    padding: 1em 1em 1em;
 }
 button{
     color: #f9f3ec;
@@ -84,7 +83,6 @@ button{
 .bottom_buttons{
     display: flex;
     justify-content: right;
-    padding: 1em 0em 1em 1em;
     margin: 1em;
 }
 #save{
@@ -135,7 +133,7 @@ footer{
         margin-left: .04rem;
     }
     aside ul{
-        flex-direction: columng;
+        flex-direction: column;
     }
     header{
         order:1;
@@ -146,7 +144,6 @@ footer{
     .bottom_buttons{
         display: flex;
         justify-content: right;
-        padding: 0em 0em 0em 0em;
         margin: 1rem 0.5rem 0rem 0rem;
     }
     button{
