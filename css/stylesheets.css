@@ -46,7 +46,8 @@ aside li{
     list-style-type: square;
 }
 aside{
-    color: #4b7171 ;
+    color: #4b7171;
+    background-color: #FFF3A3;
 }
 main{
     display: grid;
