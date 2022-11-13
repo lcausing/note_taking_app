@@ -4,6 +4,7 @@
 }
 #text_area{
     font-family: 'Roboto Mono', monospace;
+    margin: 0rem 0.5rem 0rem;
 }
 
 body {
@@ -30,18 +31,19 @@ button{
 }
 #cancel{
     background-color: #92302A;
-        margin-left: 1em;
+    margin: 0rem 0.5rem 0rem 0rem;
 }
 header ul{
     list-style-type: none;
     display: flex;
     justify-content: right;
-    margin: 0px 0.5rem 0px 0px;
-    padding: 0px;
+    margin: 0rem 0.5rem 0rem 0rem;
+    padding: 0rem;
 
 }
 header ul li{
     padding: 5px;
+    margin: 0rem 0.5rem 0rem 0rem;
 }
 aside li{
     list-style-type: square;
@@ -61,12 +63,13 @@ main{
 .top_buttons{
     display: flex;
     justify-content: space-between;
-    padding: 1em 0.5em 1em;
+    padding: 1rem 1rem 1rem;
 }
 .bottom_buttons{
     display: flex;
     justify-content: right;
     padding: 1em 0em 1em 1em;
+    margin: 0rem 0.5rem 0rem 0rem;
 }
 #save{
     margin-right: 1%;
