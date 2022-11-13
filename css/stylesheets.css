@@ -1,6 +1,6 @@
 *{
     font-family: 'Open Sans', sans-serif;
-    color:#4b7171 ;
+    color:#395656 ;
 }
 #text_area{
     font-family: 'Roboto Mono', monospace;
@@ -16,12 +16,21 @@ body {
 h1,footer{
     text-align: center;
 }
-#new_note{
-    background-color: #4b7171;
+button{
     color: #f9f3ec;
     border: 0;
     padding: 0.75rem;
     border-radius: 1em;
+}
+#new_note, #save{
+    background-color: #395656;
+}
+#dark_theme{
+    background-color: #6f6a87;
+}
+#cancel{
+    background-color: #d9827c;
+        margin-left: 1em;
 }
 header ul{
     list-style-type: none;
@@ -36,7 +45,9 @@ header ul li{
 aside li{
     list-style-type: square;
 }
-
+aside{
+    color: #4b7171 ;
+}
 main{
     display: grid;
 }
@@ -53,6 +64,7 @@ main{
 #save{
     margin-right: 1%;
 }
+
 @media screen and (min-width:600px) {
     body{
         display: grid;
