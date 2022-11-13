@@ -9,7 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
-    margin-top: 1px;
+    margin: 0;
     background-color: #f9f3ec;
 
 }
@@ -36,8 +36,9 @@ header ul{
     list-style-type: none;
     display: flex;
     justify-content: right;
-    margin: 0px;
+    margin: 0px 0.5rem 0px 0px;
     padding: 0px;
+
 }
 header ul li{
     padding: 5px;
@@ -48,6 +49,11 @@ aside li{
 aside{
     color: #4b7171;
     background-color: #FFF3A3;
+    padding-left: 1rem 
+    width 100%;
+}
+aside h2{
+    margin-left: .04rem ;
 }
 main{
     display: grid;
@@ -78,7 +84,6 @@ main{
         height: 100%;
         z-index: 1;
         width: 20%;
-        margin-top: 10px;
         position: fixed;
         top: 0;
         left: 0;
