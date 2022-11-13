@@ -118,10 +118,10 @@ footer{
         order:0;
         grid-column: 1/2;
         grid-row: 1/-3;
-        height: 100%;
+        height: 100vh;
         
         z-index: 1;
-        width: 20%;
+        width: 20vw;
         position: fixed;
         top: 0;
         left: 0;
@@ -141,12 +141,8 @@ footer{
         
     }
     .bottom_buttons{
-        display: flex;
         justify-content: right;
         margin: 1rem 0.5rem 0rem 0rem;
-    }
-    button{
-        border-radius: 1em;
     }
     main{
         order:2;
