@@ -25,7 +25,7 @@ header nav ul{
     padding: 0rem;
 }
 header ul li{
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
     padding: 5px;
     margin: 0rem 0.5rem 0rem 0rem;
@@ -40,7 +40,7 @@ aside{
 aside ul{
     list-style-type: square;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 aside h2{
@@ -100,7 +100,7 @@ footer{
 }
 .footer_logo{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
     margin-top: auto;
 
