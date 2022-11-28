@@ -160,3 +160,6 @@ footer{
     border-color: rgb(4, 4, 99);
     color: rgb(190, 180, 180);
 }
+.display_none{
+    display:none;
+}

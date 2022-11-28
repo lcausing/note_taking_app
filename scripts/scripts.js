@@ -1,3 +1,4 @@
+/*--------Dark Theme---------*/
 const darkThemeButton = document.querySelector(".dark_theme_button");
 const text_area = document.querySelector(".text_area")
 const aside_area = document.querySelector(".aside_area")
@@ -13,4 +14,16 @@ function dark_mode(){
     darkThemeButton.textContent = "Light Theme";
     else if (darkThemeButton.textContent === "Light Theme")
     darkThemeButton.textContent = "Dark Theme";
+}
+
+/*---------Cancel--------*/
+const cancelButton = document.querySelector(".cancel_button")
+const saveButton = document.querySelector(".save_button")
+
+cancelButton.addEventListener('click',cancel_hide)
+
+function cancel_hide(){
+    text_area.classList.toggle("display_none")
+    saveButton.classList.toggle("display_none")
+    cancelButton.classList.toggle("display_none")
 }
