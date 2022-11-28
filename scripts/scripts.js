@@ -1,2 +1,2 @@
-const darkTheme = document.querySelector(#dark_theme)
+const darkTheme = document.querySelector(.dark_theme)
 

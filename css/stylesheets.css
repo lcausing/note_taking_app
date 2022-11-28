@@ -65,10 +65,10 @@ button{
     padding: 1em 1em 1em;
     border-radius: 1em;
 }
-#new_note, #save{
+#new_note_button, #save_button{
     background-color: #395656;
 }
-#dark_theme{
+#dark_theme_button{
     background-color: #514f64;
 }
 
@@ -84,10 +84,10 @@ button{
     justify-content: right;
     margin: 1em;
 }
-#save{
+#save_button{
     margin-right: 0.5rem;
 }
-#cancel{
+#cancel_button{
     background-color: #92302A;
     margin: 0rem 0.5rem 0rem 0rem;
 }
