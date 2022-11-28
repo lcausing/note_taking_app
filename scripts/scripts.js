@@ -9,4 +9,8 @@ function dark_mode(){
     text_area.classList.toggle("dark_mode_text_area")
     aside_area.classList.toggle("dark_mode_aside")
     body_area.classList.toggle("dark_mode_body")
+    if (darkThemeButton.textContent === "Dark Theme")
+    darkThemeButton.textContent = "Light Theme";
+    else if (darkThemeButton.textContent === "Light Theme")
+    darkThemeButton.textContent = "Dark Theme";
 }
