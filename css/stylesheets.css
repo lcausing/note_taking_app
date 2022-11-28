@@ -1,8 +1,6 @@
-*{
+body {
     font-family: 'Roboto Mono', monospace;
     color:#395656 ;
-}
-body {
     display: grid;
     grid-template-rows: max-content max-content max-content;
     margin: 0;
@@ -151,7 +149,11 @@ footer{
 
 .gray_bg_color{
     background-color: gray;
+    color:white;
 }
 .black_bg_color{
     background-color: black;
+}
+.white_font_color{
+    color: white;
 }
