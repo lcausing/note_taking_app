@@ -1,3 +1,4 @@
+/*---------Body--------*/
 body {
     font-family: 'Roboto Mono', monospace;
     color:#395656 ;
@@ -146,6 +147,7 @@ footer{
         grid-column: 2/-1;
     }
 }
+/*---------Javascript--------*/
 
 .dark_mode_aside{
     background-color: rgb(81, 79, 79);

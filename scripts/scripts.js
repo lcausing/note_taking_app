@@ -1,4 +1,4 @@
-/*--------Dark Theme---------*/
+/*--------Dark Theme Button---------*/
 const darkThemeButton = document.querySelector(".dark_theme_button");
 const text_area = document.querySelector(".text_area")
 const aside_area = document.querySelector(".aside_area")
@@ -16,7 +16,7 @@ function dark_mode(){
     darkThemeButton.textContent = "Dark Theme";
 }
 
-/*---------Cancel--------*/
+/*---------Cancel Button--------*/
 const cancelButton = document.querySelector(".cancel_button")
 const saveButton = document.querySelector(".save_button")
 
@@ -28,7 +28,7 @@ function cancel_hide(){
     cancelButton.classList.add("display_none")
 }
 
-/*---------New Note--------*/
+/*---------New Note Button--------*/
 
 const newNoteButton = document.querySelector(".new_note_button")
 
@@ -55,3 +55,14 @@ const notesArray = [
     body: "this is my second note"
     }
 ]
+
+/*---------Save Button-------*/
+saveButton.addEventListener('click',save_feature)
+
+
+function save_feature(){
+    let title_name= prompt("Please insert the title name!")
+    let body_text= text_area.value
+    notesArray.push({title:title_name
+        ,body:body_text})
+}
