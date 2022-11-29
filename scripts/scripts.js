@@ -23,7 +23,24 @@ const saveButton = document.querySelector(".save_button")
 cancelButton.addEventListener('click',cancel_hide)
 
 function cancel_hide(){
-    text_area.classList.toggle("display_none")
-    saveButton.classList.toggle("display_none")
-    cancelButton.classList.toggle("display_none")
+    text_area.classList.add("display_none")
+    saveButton.classList.add("display_none")
+    cancelButton.classList.add("display_none")
+}
+
+/*---------New Note--------*/
+
+const newNoteButton = document.querySelector(".new_note_button")
+
+newNoteButton.addEventListener('click',new_note)
+
+function new_note(){
+    if (text_area.classList.contains("display_none")){
+        text_area.classList.remove("display_none")
+        saveButton.classList.remove("display_none")
+        cancelButton.classList.remove("display_none")
+    }
+    else{
+        text_area.value = ""
+    }
 }
