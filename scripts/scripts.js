@@ -57,17 +57,20 @@ const notesArray = [
 ]
 
 /*---------Save Button-------*/
-saveButton.addEventListener('click',save_feature)
+saveButton.addEventListener('click',save_to_array)
+// saveButton.addEventListener('click',add_to_list)
 
-
-function save_feature(){
-    let title_name= prompt("Please insert the title name!")
+function save_to_array(){
+    title_name= prompt("Please insert the title name!")
     let body_text= text_area.value
     notesArray.push(
         {title:title_name,
             body:body_text
         }
         )
+    const listItemElement = document.createElement("li");
+    listItemElement.textContent = title_name;
+    noteList.appendChild(listItemElement);
 }
 
 /*---------My Notes List Clickable-------*/
