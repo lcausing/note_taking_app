@@ -8,9 +8,8 @@
     <link href="css/stylesheets.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="scripts/scripts.js" defer></script>
 </head>
-<body class="body_area">
+<body>
     <header>
         <h1>Take Better Notes</h1>
         <nav>
@@ -20,22 +19,22 @@
             </ul>
         </nav>
 </header>
-<aside class="aside_area">
+<aside>
     <h2>My Notes</h2>
-    <ul class="note_list">
+    <ul>
         <li>note one</li>
         <li>note two</li>
     </ul>
 </aside>
 <main>
-<div class="top_buttons button">
-    <button class="new_note_button">New Note</button>
-    <button class="dark_theme_button">Dark Theme</button>
+<div class="top_buttons">
+    <button id="new_note">New Note</button>
+    <button id="dark_theme">Dark Theme</button>
 </div>
-<textarea class="text_area" placeholder="This is a placeholder"></textarea>
-<div class="bottom_buttons button">
-    <button class="save_button">Save</button>
-    <button class="cancel_button">Cancel</button>
+<textarea id="text_area" placeholder="This is a placeholder"></textarea>
+<div class="bottom_buttons">
+    <button  id="save">Save</button>
+    <button  id="cancel">Cancel</button>
 </div>
 </main>
 <footer>
