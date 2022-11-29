@@ -104,12 +104,11 @@ footer{
 }
 .footer_logo{
     display: flex;
-    /* flex-direction: row; */
     justify-content: center;
     margin-top: auto;
 
 }
-
+/*---------Media Query---------*/
 @media screen and (min-width:600px) {
     body{
         grid-template-rows: max-content auto max-content;
@@ -152,7 +151,7 @@ footer{
         grid-column: 2/-1;
     }
 }
-/*---------Javascript--------*/
+/*---------Javascript modifiers--------*/
 
 .dark_mode_aside{
     background-color: rgb(81, 79, 79);

@@ -58,7 +58,6 @@ const notesArray = [
 
 /*---------Save Button-------*/
 saveButton.addEventListener('click',save_to_array)
-// saveButton.addEventListener('click',add_to_list)
 
 function save_to_array(){
     title_name= prompt("Please insert the title name!")
@@ -68,6 +67,7 @@ function save_to_array(){
             body:body_text
         }
         )
+    /*---------Saving to a clickable list on sidebar-------*/ 
     const listItemElement = document.createElement("li");
     listItemElement.textContent = title_name;
     noteList.appendChild(listItemElement);
