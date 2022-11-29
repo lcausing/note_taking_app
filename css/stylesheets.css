@@ -41,6 +41,11 @@ aside ul{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
+}
+aside ul li:hover{
+    cursor:pointer;
+    color:rgb(4, 4, 99);    
 }
 aside h2{
     margin-left: 0.5rem;
@@ -163,5 +168,5 @@ footer{
     color: rgb(190, 180, 180);
 }
 .display_none{
-    display:none;
+    display: none;
 }

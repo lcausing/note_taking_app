@@ -63,6 +63,24 @@ saveButton.addEventListener('click',save_feature)
 function save_feature(){
     let title_name= prompt("Please insert the title name!")
     let body_text= text_area.value
-    notesArray.push({title:title_name
-        ,body:body_text})
+    notesArray.push(
+        {title:title_name,
+            body:body_text
+        }
+        )
+}
+
+/*---------My Notes List Clickable-------*/
+const noteList = document.querySelector(".note_list")
+noteList.addEventListener('click',array_search)
+
+
+
+function array_search(e){
+    console.log(e.target)
+    for (let note of notesArray){
+        if(note.title.includes(e.target.textContent) ){
+            text_area.value = note.body
+            }
+    }
 }
