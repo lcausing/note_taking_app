@@ -1,5 +1,4 @@
 /*--------Dark Theme Button---------*/
-//
 const darkThemeButton = document.querySelector(".dark_theme_button");
 const text_area = document.querySelector(".text_area")
 const aside_area = document.querySelector(".aside_area")
